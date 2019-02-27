@@ -3,37 +3,99 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Hello World</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <div class="navbar navbar-fixed-top gunmetal-background">
+        <div class="container pastel-blue-text">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" class="navbar-toggle pastel-blue-text pastel-blue-outline" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar pastel-blue-background"></span>
+                    <span class="icon-bar pastel-blue-background"></span>
+                    <span class="icon-bar pastel-blue-background"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Hello World", "Index", "Home", new { area = "" }, new { @class = "navbar-brand pastel-blue-text" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="pastel-blue-text">@Html.ActionLink("Home", "Index", "Home", new { @class = "pastel-blue-text" })</li>
+                    <li class="pastel-blue-text">@Html.ActionLink("About", "About", "Home", new { @class = "pastel-blue-text" })</li>
+                    <li class="pastel-blue-text">@Html.ActionLink("Gallery", "Gallery", "Home", new { @class = "pastel-blue-text" })</li>
+                    <li class="pastel-blue-text">@Html.ActionLink("Contact", "Contact", "Home", new { @class = "pastel-blue-text" })</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li class="pastel-blue-text hidden-sm hidden-xs"><span class="vr"></span></li> -->
+                    <li class="pastel-blue-text hidden-sm hidden-xs"><a class="fa fa-facebook pastel-blue-text gi-2x"></a></li>
+                    <li class="pastel-blue-text hidden-sm hidden-xs"><a class="fa fa-twitter pastel-blue-text gi-2x"></a></li>
+                    <li class="pastel-blue-text hidden-sm hidden-xs"><a class="fa fa-instagram pastel-blue-text gi-2x"></a></li>
+                    <li class="pastel-blue-text hidden-sm hidden-xs"><a class="fa fa-youtube pastel-blue-text gi-2x"></a></li>
+                    <li class="pastel-blue-text hidden-sm hidden-xs"><a class="fa fa-linkedin pastel-blue-text gi-2x"></a></li>
+                    <li class="pastel-blue-text hidden-sm hidden-xs"><span class="vr"></span></li>
+
+                    <form class="navbar-form navbar-left" action="/action_page.php">
+                        <div class="text-center">
+                            <li class="pastel-blue-text hidden-lg hidden-md col-sm-3 col-xs-3"><a class="fa fa-facebook pastel-blue-text gi-2x"></a></li>
+                            <li class="pastel-blue-text hidden-lg hidden-md col-sm-3 col-xs-3"><a class="fa fa-twitter pastel-blue-text gi-2x"></a></li>
+                            <li class="pastel-blue-text hidden-lg hidden-md col-sm-3 col-xs-3"><a class="fa fa-instagram pastel-blue-text gi-2x"></a></li>
+                            <li class="pastel-blue-text hidden-lg hidden-md col-sm-3 col-xs-3"><a class="fa fa-youtube pastel-blue-text gi-2x"></a></li>
+                            <!-- <li class="pastel-blue-text hidden-sm hidden-xs"><span class="vr"></span></li> -->
+                            <br class="hidden-lg hidden-md"><br class="hidden-lg hidden-md">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-success" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <li class="pastel-blue-text hidden-sm hidden-xs"><span class="vr"></span></li>
+                    <li class="pastel-blue-text"><a class="pastel-blue-text" href="login.html"><span class=" glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container body-content gunmetal-text">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        <div class="row well well-sm">
+            <div class="col-lg-4 text-center">
+                <h3>Usefull Links</h3>
+                <ul class="list-unstyled">
+                    <li><a>Link1</a></li>
+                    <li><a>Link2</a></li>
+                    <li><a>Link3</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3>Find Me On Social Media</h3>
+                <div class="row">
+                    <span class="col-lg-3"><a class="gunmetal-text fa fa-facebook gi-2x"></a></span>
+                    <span class="col-lg-3"><a class="gunmetal-text fa fa-twitter gi-2x"></a></span>
+                    <span class="col-lg-3"><a class="gunmetal-text fa fa-instagram gi-2x"></a></span>
+                    <span class="col-lg-3"><a class="gunmetal-text fa fa-youtube gi-2x"></a></span>
+                    <span class="col-lg-3"><a class="gunmetal-text fa fa-linkedin gi-2x"></a></span>
+                    <span class="col-lg-3"><a class="gunmetal-text fa fa-twitch gi-2x"></a></span>
+                    <span class="col-lg-3"><a class="gunmetal-text fa fa-steam gi-2x"></a></span>
+                    <span class="col-lg-3"><a class="gunmetal-text fa fa-github gi-2x"></a></span>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3>Hobby Stuff</h3>
+                <ul class="list-unstyled">
+                    <li>Desert Aircraft</li>
+                    <li>ExtremeFlight</li>
+                    <li>Hobby Express</li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <footer class="footer navbar-inverse gunmetal-background text-muted platinum-text container-fluid">
+        <p class="pastel-blue-text">&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

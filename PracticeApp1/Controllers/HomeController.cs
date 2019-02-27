@@ -26,5 +26,12 @@ namespace PracticeApp1.Controllers
 
             return View();
         }
+
+        public ActionResult Gallery()
+        {
+            ViewBag.Message = "View the Gallery.";
+
+            return View();
+        }
     }
 }
