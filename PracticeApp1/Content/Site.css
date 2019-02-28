@@ -117,14 +117,19 @@ a:hover {
     text-decoration: none;
 }
 
-a {
-    color: #B8BACF !important;
+.navbar-brand, .navbar-nav > li > a:hover {
+    color: #272838 !important;
+    text-decoration: none;
 }
 
-a:focus {
+/*a {
+    color: #B8BACF !important;
+}*/
+
+/*a:focus {
     color: #F9F8F8;
     text-decoration: underline;
-}
+}*/
 
 .footer li{
     color: #E8EBE4;
@@ -136,7 +141,7 @@ a:focus {
 }
 
 .gunmetal-text {
-    color: #272838;
+    color: #272838 !important;
 }
 
 .gunmetal-background {
@@ -209,10 +214,10 @@ a:focus {
     color: #B8BACF;
 }
 
-.btn.focus, .btn:focus, .btn:hover {
+/*.btn.focus, .btn:focus, .btn:hover {
     color: #D2D5DD;
     text-decoration: none;
-}
+}*/
 
 .pad-top-blog {
     padding-top: 4em;
